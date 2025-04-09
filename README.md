@@ -42,7 +42,6 @@ MacCleanerApp is a macOS application that provides a user-friendly graphical int
 ## Project Diagram
 
 ```mermaid
-
 flowchart TD
     A[User Clicks Menu Option] --> B[SwiftUI Front End]
     B --> C[Launch Process (cleanup.sh)]
@@ -50,7 +49,6 @@ flowchart TD
     D --> E[Run Specific Cleanup Function]
     E --> F[Log & Output Results]
     F --> B
-
 ```
 
 Note: The diagram above (rendered with Mermaid) illustrates the overall flow of information from the user action to executing the correct cleanup function and showing the output back in the app.

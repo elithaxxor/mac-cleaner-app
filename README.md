@@ -50,7 +50,14 @@ flowchart TD
     E --> F[Log & Output Results]
     F --> B
 ```
-
+flowchart TD
+    A[User Clicks Menu Option] -->|Launches| B[SwiftUI Front End]
+    B -->|Executes| C[Launch Process (cleanup.sh)]
+    C -->|Calls| D[Command Dispatcher in Bash Script]
+    D -->|Invokes| E[Run Specific Cleanup Function]
+    E -->|Generates| F[Log & Output Results]
+    F -->|Updates| B
+    
 Note: The diagram above (rendered with Mermaid) illustrates the overall flow of information from the user action to executing the correct cleanup function and showing the output back in the app.
 
 ⸻
